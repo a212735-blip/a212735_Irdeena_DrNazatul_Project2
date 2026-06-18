@@ -7,17 +7,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <style>
     :root {
-      --sand:       #E8D5B7;   /* warm sandy beige — bobo's fur */
-      --sand-light: #F5ECD9;   /* pale sand */
-      --sand-dark:  #C4A882;   /* deeper tan */
-      --brown:      #6B4226;   /* rich capybara brown */
-      --brown-mid:  #8B5E3C;   /* medium brown */
+      --sand:       #E8D5B7;
+      --sand-light: #F5ECD9;
+      --sand-dark:  #C4A882;
+      --brown:      #6B4226;
+      --brown-mid:  #8B5E3C;
       --brown-light:#A0714F;
-      --terra:      #C1613A;   /* terracotta accent */
-      --sage:       #7A9E7E;   /* soft sage green */
+      --terra:      #C1613A;
+      --sage:       #7A9E7E;
       --sage-light: #EAF2EB;
-      --cream:      #FAF6EF;   /* warm off-white bg */
-      --dark:       #2C1A0E;   /* deep espresso dark */
+      --cream:      #FAF6EF;
+      --dark:       #2C1A0E;
       --muted:      #8A7260;
     }
 
@@ -32,7 +32,7 @@
     }
     .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
 
-    /* ── NAV ── */
+    /* NAV */
     header {
       position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
       background: rgba(250,246,239,0.96);
@@ -70,7 +70,7 @@
       transition: 0.3s;
     }
 
-    /* ── HERO ── */
+    /* HERO */
     #home {
       background: linear-gradient(145deg, var(--brown) 0%, var(--brown-mid) 60%, #A0714F 100%);
       color: var(--sand-light);
@@ -119,7 +119,7 @@
       box-shadow: 0 8px 24px rgba(193,97,58,0.35);
     }
 
-    /* ── SECTION TITLES ── */
+    /* SECTION TITLES */
     section { padding: 86px 0; }
     .section-title {
       font-family: 'Playfair Display', serif;
@@ -135,7 +135,7 @@
       background: var(--terra); border-radius: 2px;
     }
 
-    /* ── CARDS ── */
+    /* CARDS */
     .card-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -262,7 +262,7 @@
     .github-btn:hover { background: var(--dark); transform: scale(1.02); }
     .github-btn svg { fill: currentColor; width: 17px; height: 17px; }
 
-    /* ── REFLECTION ── */
+    /* REFLECTION */
     .reflection-box {
       background: #fff;
       border-radius: 16px;
@@ -277,7 +277,7 @@
     }
     .reflection-box p:last-child { margin-bottom: 0; }
 
-    /* ── SKILLS ── */
+    /* SKILLS */
     #skills { background: var(--sand-light); }
     .skills-container {
       display: flex; flex-wrap: wrap;
@@ -298,10 +298,10 @@
       box-shadow: 0 6px 16px rgba(107,66,38,0.2);
     }
 
-    /* ── RESOURCES ── */
+    /* RESOURCES */
     .resources-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px; max-width: 800px; margin: 0 auto;
+      gap: 24px; max-width: 900px; margin: 0 auto;
     }
     .resource-card {
       background: #fff; padding: 28px; border-radius: 14px;
@@ -318,19 +318,18 @@
     }
     .resource-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
 
-    /* ── FOOTER ── */
+    /* FOOTER */
     footer {
       background: var(--brown);
       color: var(--sand-light);
       padding: 44px 0; text-align: center;
-      margin-top: 0;
       border-top: 4px solid var(--terra);
     }
     footer p { margin: 6px 0; opacity: 0.9; font-size: 0.95rem; }
     footer .accent { color: var(--sand); font-weight: 700; }
     .footer-bobo { font-size: 2rem; margin-bottom: 10px; display: block; }
 
-    /* ── MOBILE ── */
+    /* MOBILE */
     @media (max-width: 768px) {
       body { padding-top: 60px; }
       nav { height: 60px; }
@@ -533,10 +532,10 @@
           <span class="lab-number-tag">Project 01</span>
           <h3 class="card-title">LexiPath v1.0</h3>
           <div class="project-meta">
-            <strong>Problem Statement:</strong> Many students lack access to engaging vocabulary learning tools. Existing apps are expensive, ad-heavy, or require constant internet — leaving quality education inaccessible for those with limited resources.
+            <strong>Problem Statement:</strong> Learners often lose motivation when studying languages alone. LexiPath v1 tackles this by building a 5-screen app centred on gamification — XP points, streaks, and learning goals that keep users coming back.
           </div>
           <p class="card-description">
-            The first version of LexiPath introduced a 5-screen app with Jetpack Compose and Navigation. Users can browse vocabulary lists, take quizzes, track progress, and adjust settings — all guided by Bobo the capybara as a friendly learning companion.
+            The first version of LexiPath features a Home screen, Profile setup (name + language selection), Learning Goals, an interactive Lesson screen, and a Progress tracker showing XP and streak data — all connected through a shared ViewModel and Compose Navigation.
           </p>
           <div class="card-reflection">
             <strong>Lessons Learned:</strong> Sharing state cleanly through a ViewModel across multiple screens taught me why separation of concerns matters. The app felt alive and consistent the moment data stopped living inside individual composables.
@@ -551,8 +550,8 @@
       <!-- Project 2 -->
       <article class="card">
         <div class="video-container">
-          <a href="YOUR_PROJECT2_YOUTUBE_LINK" target="_blank" rel="noopener" class="video-placeholder-link"
-             style="background-image: url('https://img.youtube.com/vi/YOUR_P2_VIDEO_ID/hqdefault.jpg');">
+          <a href="https://youtu.be/_7wnVktfT-s" target="_blank" rel="noopener" class="video-placeholder-link"
+             style="background-image: url('https://img.youtube.com/vi/_7wnVktfT-s/hqdefault.jpg');">
             <span class="video-badge">▶ Watch VSR</span>
             <div class="play-button"><div class="play-triangle"></div></div>
           </a>
@@ -561,19 +560,21 @@
           <span class="lab-number-tag">Project 02</span>
           <h3 class="card-title">LexiPath v2.0</h3>
           <div class="project-meta">
-            <strong>Problem Statement:</strong> Static word lists don't reflect real-world language richness. Learners need live word relationships, a shareable community space, and interactive challenges to stay motivated and retain vocabulary effectively.
+            <strong>Problem Statement:</strong> Students with dyslexia struggle with static, screen-only learning. LexiPath v2 introduces physical, multisensory interaction — using phone sensors and vibration to make vocabulary retention more effective and accessible.
           </div>
           <p class="card-description">
-            LexiPath v2 is a fully connected, persistent, and hardware-aware upgrade. The new Word Explorer fetches live synonyms and related words from the Datamuse API. Community Wall lets users share discoveries via Firebase Firestore. Shake the phone to trigger a surprise vocabulary challenge via the accelerometer. All vocabulary saves locally with Room — accessible offline, always.
+            LexiPath v2 expands to 7 screens: Login, Home, Community, Awards, Settings (with Dark Mode toggle), Module Selection, and a dedicated Sensor screen. The Home screen fetches a live <strong>Daily Fact</strong> via Retrofit. The <strong>Light Sensor</strong> detects a dark room and vibrates to protect your eyes, while the star feature — <strong>Air Writing</strong> — uses the Accelerometer to track hand movements as you trace letters in the air. User preferences sync locally via Room and DataStore; community posts go live on Firebase Firestore.
           </p>
           <div class="pillars-grid">
-            <div class="pillar-chip">🗄️ Room DB — offline vocab</div>
-            <div class="pillar-chip">☁️ Firebase — Community Wall</div>
-            <div class="pillar-chip">🌐 Datamuse API — live words</div>
-            <div class="pillar-chip">📳 Accelerometer — Shake to Challenge</div>
+            <div class="pillar-chip">🗄️ Room + DataStore — offline prefs</div>
+            <div class="pillar-chip">☁️ Firebase — Community posts</div>
+            <div class="pillar-chip">🌐 Retrofit API — Daily Facts</div>
+            <div class="pillar-chip">📳 Accelerometer — Air Writing</div>
+            <div class="pillar-chip">💡 Light Sensor — Eye protection</div>
+            <div class="pillar-chip">🌙 Dark Mode — Accessibility</div>
           </div>
           <div class="card-reflection">
-            <strong>Lessons Learned:</strong> Connecting the accelerometer's SensorEventListener to Compose recomposition required careful lifecycle management. Once it worked, "Shake to Challenge" felt like magic — and I finally understood why hardware integration makes learning genuinely engaging.
+            <strong>Lessons Learned:</strong> Wiring a SensorEventListener into Compose's lifecycle required careful thought around registration and cleanup. When Air Writing finally worked — the phone tracking my hand in mid-air — it made every debugging session worth it.
           </div>
           <a href="YOUR_GITHUB_PROJECT2_LINK" class="github-btn" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
@@ -595,10 +596,10 @@
         When I started this course, I had never written a single line of Kotlin. Building LexiPath from a blank Android Studio project to a cloud-connected, sensor-integrated vocabulary app has been one of the most challenging and rewarding experiences of my studies. Every lab pushed me a little further — from composables to ViewModel, from navigation to Room, and finally to Firebase and hardware sensors.
       </p>
       <p>
-        Choosing SDG 4 (Quality Education) as my theme gave every technical decision a real purpose. Every feature — the Datamuse API's live word data, the offline-capable Room database, the community-driven Firestore Wall — exists because language learners deserve tools that are rich, reliable, and accessible. Bobo the capybara wasn't just a mascot; he reminded me throughout that learning should feel warm, approachable, and never intimidating.
+        Choosing SDG 4 (Quality Education) as my theme gave every technical decision a real purpose. In v2, the focus on dyslexic learners sharpened that even further — every feature exists not just to demonstrate a technology, but to genuinely lower the barrier to learning. Air Writing, eye-protection vibration, and Dark Mode accessibility aren't gimmicks; they're answers to real problems students face every day.
       </p>
       <p>
-        This semester has prepared me to think like a real mobile developer: considering architecture, data flow, user experience, and hardware capabilities together. I walk away confident in Jetpack Compose, MVVM patterns, and API integration — and genuinely excited to keep building.
+        This semester has prepared me to think like a real mobile developer: considering architecture, data flow, user experience, and hardware capabilities together. I walk away confident in Jetpack Compose, MVVM patterns, sensor integration, and API integration — and genuinely excited to keep building.
       </p>
     </div>
   </div>
@@ -612,14 +613,16 @@
       <span class="skill-badge">Kotlin</span>
       <span class="skill-badge">Jetpack Compose</span>
       <span class="skill-badge">Room Database</span>
+      <span class="skill-badge">DataStore</span>
       <span class="skill-badge">Firebase Firestore</span>
-      <span class="skill-badge">Datamuse API</span>
       <span class="skill-badge">Retrofit</span>
       <span class="skill-badge">Accelerometer</span>
+      <span class="skill-badge">Light Sensor</span>
       <span class="skill-badge">MVVM Architecture</span>
       <span class="skill-badge">StateFlow</span>
       <span class="skill-badge">Navigation Compose</span>
       <span class="skill-badge">Material Design 3</span>
+      <span class="skill-badge">Dark Mode</span>
       <span class="skill-badge">GitHub Pages</span>
     </div>
   </div>
@@ -632,13 +635,18 @@
     <div class="resources-grid">
       <div class="resource-card">
         <div class="r-icon">🌐</div>
-        <h3>Datamuse API</h3>
-        <p>Free word relationship API — no key required. Powers LexiPath's Word Explorer screen with live synonyms, related words, and rhymes.</p>
+        <h3>Retrofit + REST API</h3>
+        <p>Used to fetch the live Daily Fact on the Home screen. Retrofit handles HTTP requests cleanly within Compose's coroutine and ViewModel lifecycle.</p>
       </div>
       <div class="resource-card">
         <div class="r-icon">☁️</div>
         <h3>Firebase Firestore</h3>
-        <p>Real-time cloud database powering the Community Wall — allowing learners to share vocabulary discoveries with each other instantly.</p>
+        <p>Real-time cloud database powering the Community screen — learners share posts that sync instantly across all devices.</p>
+      </div>
+      <div class="resource-card">
+        <div class="r-icon">📱</div>
+        <h3>Android Sensor API</h3>
+        <p>SensorEventListener powers both Air Writing (Accelerometer) and the eye-protection feature (Light Sensor) — wired carefully into Compose's lifecycle.</p>
       </div>
       <div class="resource-card">
         <div class="r-icon">🤖</div>
